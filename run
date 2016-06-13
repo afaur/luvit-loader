@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# test deps loading
+#lua loader/test.lua
+
+lua lib/server.lua
+

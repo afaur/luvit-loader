@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# If you don't have luarocks install lua to get it automatically
+# https://github.com/keplerproject/luarocks/wiki/Installation-instructions-for-Mac-OS-X#option-1-using-homebrew
+brew update
+brew install lua
+
+# Need cmake for this to compile
+luarocks install luv
+
+# Not needed if using luaJit
+luarocks install luabitop
+
+# Install some deps using lit
+lit install creationix/weblit creationix/uv luvit/pretty-print
+
